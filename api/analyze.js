@@ -1,6 +1,8 @@
-import { OpenAI } from "openai";
+import OpenAI from "openai";
 
-const client = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const client = new OpenAI({
+  apiKey: process.env.OPENAI_API_KEY
+});
 
 export default async function analyzeHandler(req, res) {
   // Handle GET requests
